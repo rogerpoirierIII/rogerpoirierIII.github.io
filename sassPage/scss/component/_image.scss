@@ -1,0 +1,19 @@
+
+.img{
+    &-avatar {
+        @include image-position; 
+        max-height: 100%;
+  }
+  
+    &-frame {
+        @include image-position;
+        padding: 13px;
+        border: 1px solid $image-border;
+  }
+  
+    &-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  }
+}
