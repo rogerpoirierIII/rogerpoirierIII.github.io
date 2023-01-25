@@ -153,4 +153,8 @@ nav{
     #about{
         height: 70vh;
     }
+@media (orientation:landscape){
+    #about{
+        height: auto;
+    }    
 }
