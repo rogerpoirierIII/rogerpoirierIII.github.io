@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+header{
+    display: flex;
+    max-width: 500px;
+    padding: 20px 0 50px 0;
+    margin: auto;
+    max-width:750px;
+}
+header h3{
+    font-size: 16px;
+    margin: auto;
+}
+#search{
+    padding: 5px;
+    border-radius: 4px;
+    height: fit-content;
+}
+#search:focus{
+    background-color: lightgray;
+    transition: background-color .7s .25s;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, .75)
+}
+.focus{
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+.focus-btns{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+}
+.focus-close{
+    right: 15px;
+    top: 5px;
+    background: white;
+}
+.next,.back{
+    top: 150px;
+    bottom: 0px;
+    font-size: 30px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(100, 100, 100, .2);
+}
+.next{
+    left: 325px;
+}
+.back{
+    right: 325px;
+}
+.hidden{
+    display: none;
+}
+#grid-container{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
+    gap: 15px;
+    margin: auto;
+    max-width: 1024px;
+}
+.grid-item{
+    border: solid gray 1px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    max-width: 90%;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.employee-info{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 20px;
+    width: 100%;
+}
+.employee-info li{
+    padding:5px;
+}
+.employee-name{
+    font-size: larger;
+    font-weight: 700;
+}
+.employee-email,
+.employee-location{
+    font-size: small;
+}

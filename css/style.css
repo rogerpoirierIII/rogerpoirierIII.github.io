@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #3c3c3c;
+    width: 100%;
+    font-family: 'Unbounded', cursive;}
+.canvas{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
+}
+canvas{
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+}
+#home{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    align-items: center;
+    top: 25%;
+
+}
+#home h1,
+#home p{
+    background-color: #3c3c3c;
+    z-index: 1;
+    margin: 0;
+}
+.emphasis{
+    color: salmon;
+}
+.heading-link{
+    border: 3px double salmon;
+    border-radius: 2em;
+    padding:1em;
+    background: white;
+    text-decoration: none;
+    color: salmon;
+    z-index: 1;
+}
+.heading-link:hover{
+    border-color: #0dcaf0;
+    color: #0dcaf0;
+    transition: all .3s .2s;
+}
+nav{
+    background-color: #0dcaf0;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-link:hover,
+.nav-link:active,
+.active{
+    color: black;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    transition: all .5s .1s;
+
+}
+h4{
+    font-weight: 700;
+    color: salmon;
+}
+#about,#work,#contact{
+    max-width: 775px;
+    margin: 3em auto;
+}
+.biography{
+    margin-right: 25px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 33%;
+    border: double 2px;
+    border:3px double #0dcaf0;
+    width: 150px;
+    padding: 20px;
+}
+.skill:hover{
+    background-color: #0dcaf0;
+    border-color: salmon;
+    font-weight: bolder;
+    transition: all .5s .2s ease-in-out;
+}
+#skills{
+    align-items: flex-start;
+}
+.logo{
+    width:50px;
+}
+
+.card-img-top{
+    height: 200px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#contact{
+    text-align: center;
+    font-size: 1.1em;
+}
+.contact-method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-method a{
+    color: #0dcaf0;
+
+}
+footer{
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    border-top: #0dcaf0 1px solid;
+    padding: 1.5em;
+    background:linear-gradient(#3c3c3c 30%,#a7a7a7);
+}
+.footer-logo{
+    width: 45px;
+    padding: 0;
+    background-color: black;
+    border-radius: 25%;
+}
+@media screen and (min-width:500px){
+nav{
+    font-size:16px;
+  font-weight: 500;
+}
+}
+@media screen and (min-width:768px){
+    #about{
+        height: 70vh;
+    }
+}

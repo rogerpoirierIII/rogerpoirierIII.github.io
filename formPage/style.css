@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Signika', sans-serif;
+    background: linear-gradient(white 15%,rgb(255, 174, 145) 65%, orangered);
+    margin: 0;
+    }
+header{
+    text-align: center;
+    border-bottom: double 7.5px;    
+}
+h1{
+    background-color: rgb(60, 60, 75);
+    color: aliceblue;
+    padding:30px 5px;
+    margin: 0 auto;
+}
+.contact{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+}
+legend{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 20px 0;
+    }
+input,
+select,
+textarea,
+fieldset{
+    border: none;
+}
+.contact input,
+.contact select,
+label{
+    padding: 7.5px;
+}
+.contact input,
+.contact select,
+textarea{
+    margin:.75em 0 1.25em;
+    border-radius: 5px;
+    background-color: rgb(235,235, 235);
+    width: 95%;
+}
+#zip{
+    width: 50%;
+    margin-right:47.5%;
+}
+input::placeholder{
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+    color: red;
+}
+input:hover,
+textarea:hover{
+    border:solid black 3px
+}
+.transition{
+    transition:all 0.35s ease-in
+}
+input:focus,
+select:focus,
+textarea:focus{
+    background: darkslategray;;
+    border:solid black 3px;
+    color: aliceblue;
+}
+.comment{
+    margin: 30px 0 10px;
+}
+
+input:checked + label{
+font-weight: 700;
+text-decoration: underline;
+}
+button{
+    border: solid black 5px;
+    background-color: rgb(46, 78, 109);
+    color: white;
+    height: 50px;
+    width: 95%;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 700;
+    
+}
+footer h6{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+@media (min-width:768px) {
+
+.contact input,
+.contact select
+{
+width: 75%;
+}
+.contact label{
+    display: inline-block;
+    width: 150px;
+}
+#zip{
+    width: 25%;
+    margin-right: 50%;
+}
+}
